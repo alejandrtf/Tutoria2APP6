@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Tutoria2APP6</string>
+    <string name="titulo">EQUIPOS  1ª DIVISIÓN</string>
+    <string name="labelEquipo">EQUIPO:</string>
+    <string name="labelPuestoEquipo">Clasificación en la liga:</string>
+    <string name="aniadir">AÑADIR</string>
+    <string name="action_buscar">BORRAR</string>
+    <string name="action_borrar">BORRAR</string>
+    <string name="sin_foto">Sin FOTO</string>
+    <string name="aniadirFoto">Añadir Foto</string>
+    <string name="labelNombreEquipo">Nombre Equipo:</string>
+    <string name="labelPuntosEquipo">Puntos Equipo</string>
+    <string name="labelFotoEscudo">Escudo</string>
+    <string name="aniadirEquipo">AÑADIR EQUIPO NUEVO</string>
+</resources>
