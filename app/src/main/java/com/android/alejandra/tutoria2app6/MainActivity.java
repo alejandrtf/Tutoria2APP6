@@ -18,7 +18,7 @@ import com.android.alejandra.tutoria2app6.modelo.Equipo;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
-    static ArrayList<Equipo> arrayEquipos = new ArrayList<Equipo>();;
+    static ArrayList<Equipo> arrayEquipos = new ArrayList<>();
     private final static int COD_PETICION_INSERCION_EQUIPO=1;
     private EquipoAdaptador adaptador;
     private ListView lvEquipos;
@@ -76,6 +76,7 @@ public class MainActivity extends AppCompatActivity {
         for (int i = 0; i < arrayNombreEquipos.length; i++) {
             arrayEquipos.add(new Equipo(arrayNombreEquipos[i], arrayTypedEscudos.getDrawable(i), arrayPuntosEquipos[i]));
         }
+        arrayTypedEscudos.recycle();
 
     }
 
@@ -115,6 +116,7 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this,"EQUIPO BORRADO CORRECTAMENTE!!!",Toast.LENGTH_SHORT).show();
         }else{
             Toast.makeText(this,"NINGÚN EQUIPO SELECCIONADO!!!",Toast.LENGTH_SHORT).show();
+            posBorrar=3;
         }
 
     }
