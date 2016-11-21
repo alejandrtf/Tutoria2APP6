@@ -116,7 +116,7 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this,"EQUIPO BORRADO CORRECTAMENTE!!!",Toast.LENGTH_SHORT).show();
         }else{
             Toast.makeText(this,"NINGÚN EQUIPO SELECCIONADO!!!",Toast.LENGTH_SHORT).show();
-            posBorrar=3;
+         
         }
 
     }
