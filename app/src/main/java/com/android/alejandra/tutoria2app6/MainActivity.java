@@ -93,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.action_aniadir:
-                lanzarActivityAniadir();
+
                 return true;
             case R.id.action_borrar:
                 borrarEquipoSeleccionado();
@@ -116,37 +116,15 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this,"EQUIPO BORRADO CORRECTAMENTE!!!",Toast.LENGTH_SHORT).show();
         }else{
             Toast.makeText(this,"NINGÚN EQUIPO SELECCIONADO!!!",Toast.LENGTH_SHORT).show();
-         
-        }
-
-    }
-
-    /**Método que lanza la activity AniadirActivity
-     * Es llamado desde una opción de un menu de opción (AÑADIR)
-     */
-    private void lanzarActivityAniadir() {
-        Intent aniadirEquipoIntent=new Intent(this,AniadirActivity.class);
-        startActivityForResult(aniadirEquipoIntent,COD_PETICION_INSERCION_EQUIPO);
-
-    }
-
-
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if(requestCode==COD_PETICION_INSERCION_EQUIPO){
-            if (resultCode==RESULT_OK){
-                String resultadoInsercion=data.getStringExtra(AniadirActivity.RESULTADO_INSERCION);
-                if(resultadoInsercion.equals("OK")){
-                    //notifico al adaptador para que recargue lista
-                   adaptador.notifyDataSetChanged();
-                }
-            }
-            else{
-                Toast.makeText(this,"INSERCIÓN CANCELADA: Equipo nuevo no insertado",Toast.LENGTH_SHORT).show();
-            }
 
         }
+
     }
+
+
+
+
+
 
 
     @Override
