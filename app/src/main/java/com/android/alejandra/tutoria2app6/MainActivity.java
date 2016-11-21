@@ -78,7 +78,6 @@ public class MainActivity extends AppCompatActivity {
         }
         arrayTypedEscudos.recycle();
 
-
     }
 
     @Override
